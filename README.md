@@ -53,7 +53,7 @@ Now, when **all keys are set**, you are ready to encrypt and send
 you first message. **Full key** will be used for both encryption and decryption. But I guess you
 have a question - how data will be actually transformed?
 
-For this purpose I've also implemented **Caesar Shift** algorithm here. **The Caesar Cipher** technique is one of the earliest 
+For this purpose we've also implemented **Caesar Shift** algorithm here. **The Caesar Cipher** technique is one of the earliest 
 and simplest method of encryption technique. It’s simply 
 a type of substitution cipher, i.e., each letter of a given 
 text is replaced by a letter some fixed number of 
@@ -86,12 +86,12 @@ decrypt it by pressing ```Decrypt```.
 
 ## Conclusion
 
-In this project I've implemented a basic version of Diffie-Hellman
+In this project we've implemented a basic version of Diffie-Hellman
 key exchange algorithm, which can be quite usefull for those who
 wants to have a real-life example of this process right on their
 screen. 
 
-I've also made some pretty complex custom animations to make this proccess funnier and more visual and developed
+We've also made some pretty complex custom animations to make this proccess funnier and more visual and developed
 pop-up warning window to make sure that message won't be decrypted twice.
 
-You can check this app live on GitHub Pages [here](https://kr4chinin.github.io/dh-key-exchange/).
+You can check this app live on GitHub Pages [here](https://group-10-dh-key-exchange.vercel.app/).
