@@ -54,13 +54,17 @@ const ServerSection = ({ keyType, isDisabled, setIsDisabled }) => {
 					<div className="server__description">{keyType}</div>
 					<textarea
 						className="server__value"
-						disabled
 						value={keys.privateKey}
+						onChange={(e) => {
+							const val = e.target.value.replace(/\D/g, '')
+							getPrivateKey(val)
+						}}
+						placeholder="Input/Gen"
 					/>
 					<button
 						disabled={isDisabled}
 						className="server__get-btn"
-						onClick={getPrivateKey}
+						onClick={() => getPrivateKey()}
 					>
 						Generate
 					</button>

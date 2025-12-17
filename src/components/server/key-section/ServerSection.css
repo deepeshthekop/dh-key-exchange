@@ -4,7 +4,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 366px;
+	width: 400px;
 	height: 65px;
 	background: #000;
 	color: #0f0;
@@ -44,7 +44,7 @@
 }
 
 .server__description {
-	width: 106px;
+	width: 150px;
 	height: 38px;
 	background: #000;
 	border: 1px solid #0f0;

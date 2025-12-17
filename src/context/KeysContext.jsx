@@ -38,12 +38,18 @@ export function KeysContextProvider({ children }) {
 		})
 	}
 
-	function handleClientPrivate() {
-		setClientState({ ...clientState, privateKey: generateKey() })
+	function handleClientPrivate(customKey = null) {
+		setClientState({
+			...clientState,
+			privateKey: customKey !== null ? customKey : generateKey()
+		})
 	}
 
-	function handleServerPrivate() {
-		setServerState({ ...serverState, privateKey: generateKey() })
+	function handleServerPrivate(customKey = null) {
+		setServerState({
+			...serverState,
+			privateKey: customKey !== null ? customKey : generateKey()
+		})
 	}
 
 	const canCalculatePartialClient =
