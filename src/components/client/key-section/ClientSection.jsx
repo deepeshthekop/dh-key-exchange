@@ -26,13 +26,17 @@ const ClientSection = ({ keyType, isDisabled, setIsDisabled }) => {
 					<div className="client__description">{keyType}</div>
 					<textarea
 						className="client__value"
-						disabled
 						value={keys.publicKey}
+						onChange={(e) => {
+							const val = e.target.value.replace(/\D/g, '')
+							getPublicKey(val)
+						}}
+						placeholder="Input/Gen"
 					/>
 					<button
 						disabled={isDisabled}
 						className="client__get-btn"
-						onClick={getPublicKey}
+						onClick={() => getPublicKey()}
 					>
 						Generate
 					</button>

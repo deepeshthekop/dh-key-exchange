@@ -24,12 +24,18 @@ export function KeysContextProvider({ children }) {
 	const [serverState, setServerState] = useState(initialState)
 	const [clientState, setClientState] = useState(initialState)
 
-	function handleClientPublic() {
-		setClientState({ ...clientState, publicKey: generateKey() })
+	function handleClientPublic(customKey = null) {
+		setClientState({
+			...clientState,
+			publicKey: customKey !== null ? customKey : generateKey()
+		})
 	}
 
-	function handleServerPublic() {
-		setServerState({ ...serverState, publicKey: generateKey() })
+	function handleServerPublic(customKey = null) {
+		setServerState({
+			...serverState,
+			publicKey: customKey !== null ? customKey : generateKey()
+		})
 	}
 
 	function handleClientPrivate() {

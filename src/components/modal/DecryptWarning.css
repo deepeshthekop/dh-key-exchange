@@ -1,4 +1,4 @@
-@import '../../assets//fonts/Merriweather.css';
+@import '../../assets//fonts/SourceCodePro.css';
 
 .modal {
 	opacity: 0;
@@ -7,13 +7,13 @@
 	justify-content: center;
 	inset: 0;
 	position: fixed;
-	background: rgba(0, 0, 0, 0.511);
+	background: rgba(0, 0, 0, 0.8);
 	transition: 0.6s;
 	pointer-events: none;
 }
 
 .modal__content {
-	font-family: 'Merriweather', sans-serif;
+	font-family: 'SourceCodePro', monospace;
 	box-sizing: content-box;
 	display: flex;
 	align-items: center;
@@ -23,7 +23,9 @@
 	opacity: 0;
 	width: 490px;
 	height: 100px;
-	background: white;
+	background: #111;
+	border: 1px solid #0f0;
+	box-shadow: 0 0 10px #0f0;
 	border-radius: 10px;
 	transform: scale(0.5);
 	padding-bottom: 20px;
@@ -53,14 +55,16 @@
 	height: 30px;
 	width: 30px;
 	transition: 0.4s;
-	color: darkred;
+	color: #f00;
 }
 
 .close-icon:hover {
 	cursor: pointer;
 	transform: scale(1.15);
+	color: #f33;
 }
 
 .warning-text {
-	color: rgb(201, 134, 9);
+	color: #0f0;
+	text-shadow: 0 0 2px #0f0;
 }
