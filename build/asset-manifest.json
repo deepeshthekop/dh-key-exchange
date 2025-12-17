@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dh-key-exchange/static/css/main.51a50555.css",
-    "main.js": "/dh-key-exchange/static/js/main.fc5f0c97.js",
-    "static/media/Merriweather-Regular.ttf": "/dh-key-exchange/static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
-    "static/media/SourceCodePro-Regular.ttf": "/dh-key-exchange/static/media/SourceCodePro-Regular.3ba7353c5a8606cdc67b.ttf",
-    "index.html": "/dh-key-exchange/index.html",
-    "main.51a50555.css.map": "/dh-key-exchange/static/css/main.51a50555.css.map",
-    "main.fc5f0c97.js.map": "/dh-key-exchange/static/js/main.fc5f0c97.js.map"
+    "main.css": "./static/css/main.104f3bda.css",
+    "main.js": "./static/js/main.e831d4cb.js",
+    "static/media/Merriweather-Regular.ttf": "./static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
+    "static/media/SourceCodePro-Regular.ttf": "./static/media/SourceCodePro-Regular.3ba7353c5a8606cdc67b.ttf",
+    "index.html": "./index.html",
+    "main.104f3bda.css.map": "./static/css/main.104f3bda.css.map",
+    "main.e831d4cb.js.map": "./static/js/main.e831d4cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.51a50555.css",
-    "static/js/main.fc5f0c97.js"
+    "static/css/main.104f3bda.css",
+    "static/js/main.e831d4cb.js"
   ]
 }

@@ -28,6 +28,8 @@ function App() {
 		receivedFromClient: ''
 	})
 	const [isWarningOpen, setIsWarningOpen] = useState(false)
+	const [clientName, setClientName] = useState('Alice')
+	const [serverName, setServerName] = useState('Bob')
 
 	return (
 		<KeysContextProvider>
@@ -35,7 +37,20 @@ function App() {
 				<div className="global-container">
 					<div className="client-container">
 						<label className="server-label">
-							<h1>Client</h1>
+							<input
+								className="name-input"
+								value={clientName}
+								onChange={(e) => setClientName(e.target.value)}
+								style={{
+									fontSize: '2em',
+									fontWeight: 'bold',
+									border: 'none',
+									background: 'transparent',
+									textAlign: 'center',
+									color: 'inherit',
+									width: '100%',
+								}}
+							/>
 						</label>
 						<Client />
 						<ClientMessenger
@@ -72,7 +87,20 @@ function App() {
 					</div>
 					<div className="server-container">
 						<label className="server-label">
-							<h1>Server</h1>
+							<input
+								className="name-input"
+								value={serverName}
+								onChange={(e) => setServerName(e.target.value)}
+								style={{
+									fontSize: '2em',
+									fontWeight: 'bold',
+									border: 'none',
+									background: 'transparent',
+									textAlign: 'center',
+									color: 'inherit',
+									width: '100%',
+								}}
+							/>
 						</label>
 						<Server />
 						<ServerMessenger
