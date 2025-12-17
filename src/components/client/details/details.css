@@ -1,7 +1,9 @@
 .pad--small {
 	width: 440px;
 	height: 39px;
-	background: #b1b1b1;
+	background: #111;
+	border-left: 1px solid #0f0;
+	border-right: 1px solid #0f0;
 }
 
 .pad--small-btns-container {
@@ -17,14 +19,17 @@
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
-	background: #a99a9a;
-	border: 2px solid rgba(78, 57, 57, 0.12);
+	background: #000;
+	border: 1px solid #0f0;
+	box-shadow: 0 0 2px #0f0;
 }
 
 .pad--large {
 	width: 466px;
 	height: 36px;
-	background: rgba(106, 95, 95, 0.76);
+	background: #000;
+	border-left: 1px solid #0f0;
+	border-right: 1px solid #0f0;
 }
 
 .up-section {
