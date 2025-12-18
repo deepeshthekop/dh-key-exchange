@@ -24,20 +24,32 @@ export function KeysContextProvider({ children }) {
 	const [serverState, setServerState] = useState(initialState)
 	const [clientState, setClientState] = useState(initialState)
 
-	function handleClientPublic() {
-		setClientState({ ...clientState, publicKey: generateKey() })
+	function handleClientPublic(customKey = null) {
+		setClientState({
+			...clientState,
+			publicKey: customKey !== null ? customKey : generateKey()
+		})
 	}
 
-	function handleServerPublic() {
-		setServerState({ ...serverState, publicKey: generateKey() })
+	function handleServerPublic(customKey = null) {
+		setServerState({
+			...serverState,
+			publicKey: customKey !== null ? customKey : generateKey()
+		})
 	}
 
-	function handleClientPrivate() {
-		setClientState({ ...clientState, privateKey: generateKey() })
+	function handleClientPrivate(customKey = null) {
+		setClientState({
+			...clientState,
+			privateKey: customKey !== null ? customKey : generateKey()
+		})
 	}
 
-	function handleServerPrivate() {
-		setServerState({ ...serverState, privateKey: generateKey() })
+	function handleServerPrivate(customKey = null) {
+		setServerState({
+			...serverState,
+			privateKey: customKey !== null ? customKey : generateKey()
+		})
 	}
 
 	const canCalculatePartialClient =

@@ -24,7 +24,7 @@ const Arrow = ({ from, isShown }) => {
 						>
 							<polyline
 								points="0,0 10,5 0,10 1,5"
-								fill="black"
+								fill="#0f0"
 							/>
 						</marker>
 					</defs>
@@ -33,7 +33,7 @@ const Arrow = ({ from, isShown }) => {
 						markerEnd="url(#arrow)"
 						strokeWidth="25"
 						fill="none"
-						stroke="black"
+						stroke="#0f0"
 					>
 						<animate
 							dur="1s"

@@ -6,8 +6,6 @@ Than you can encrypt, send and decrypt messages. All with fancy animations!
 Consider that this is a **basic implementation** of this algorithm which shall not be used 
 for any real-life encryption purposes!
 
-<img width="1032" alt="image" src="https://user-images.githubusercontent.com/103210607/172015146-472c489b-e407-4008-a9d9-65e3b0840c82.png">
-
 ## Introduction
 
 **Diffie-Hellman key exchange**, also called exponential key exchange, 
@@ -17,15 +15,16 @@ of a would-be code breaker **mathematically overwhelming**.
 
 ## How does it work?
 
-Let's imagine that we have two end users - *Client* and *Server*. 
+Let's imagine that we have two end users - *Alice (Client)* and *Bob (Server)*. 
 There is a mutual agreement on positive prime numbers between 1000
 and 2000 which will be randomly generated and used as public and private keys.
 
 **Steps:**
 
-- First of all you need to **generate public keys** for *Client* and *Server*. Press ```Generate``` button next to the ```Public key``` title and you will see that a random prime number has appeared in the center textarea.
+- First of all you need to **generate public keys** for *Alice* and *Bob*. Press ```Generate``` button next to the ```Public key``` title and you will see that a random prime number has appeared in the center textarea.
 - Next you need to do the same thing but with **private keys**. Consider that DH KE algorithm implies that public keys are safe to be distributed through unsecured channel and private keys must be kept in secret by end users.
-- Now you are ready to calculate **partial keys**. They are also safe to exchange in unsecured channel because they are still not representing any secure information. Here you can see formulas with which it will be done automatically by pressing ```Calculate``` button next to the ```Partial key``` title (c - *Client*, s - *Server*):
+- You can also add custom values to the public and private key fields instead of generating it randomly.
+- Now you are ready to calculate **partial keys**. They are also safe to exchange in unsecured channel because they are still not representing any secure information. Here you can see formulas with which it will be done automatically by pressing ```Calculate``` button next to the ```Partial key``` title (c - *Alice*, s - *Bob*):
 
 ```
 c_partialKey = c_publicKey ** c_privateKey % s_publicKey
@@ -40,7 +39,7 @@ c_fullKey = s_partialKey ** c_privateKey % s_publicKey
 ```
 s_fullKey = c_partialKey ** s_privateKey % s_publicKey
 ```
-I guess you've noticed that *Server* **full key** is totally equal to *Client* **full key**. Now both end users
+I guess you've noticed that *Bob* **full key** is totally equal to *Alice* **full key**. Now both end users
 have same key which is unknown even to imaginary hacker (because private keys were not distributed here) who has access
 to all data which was exchanged in this channel.  
 
@@ -80,7 +79,7 @@ As you might have been already noticed ```26``` here stands for number of
 letters in English alphabet.
 
 That's how messages will be encrypted and decrypted. You can type some
-words in *Client* or *Server* messenger box and pres ```Encrypt and send```. After a second
+words in *Alice* or *Bob* messenger box and pres ```Encrypt and send```. After a second
 you will see encrypted message in the opposite messenger box where you can 
 decrypt it by pressing ```Decrypt```.
 

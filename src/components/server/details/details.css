@@ -4,8 +4,10 @@
 	justify-content: space-between;
 	width: 346px;
 	height: 212px;
-	background: #434343;
+	background: #000;
 	padding: 10px;
+	border: 1px solid #0f0;
+	box-shadow: 0 0 10px #0f0;
 }
 
 .cassette-container {
@@ -21,7 +23,8 @@
 	display: flex;
 	width: 226px;
 	height: 60px;
-	background: #8d8d8d;
+	background: #111;
+	border: 1px solid #0f0;
 }
 
 .cassette__detail {
@@ -29,20 +32,23 @@
 	justify-content: space-between;
 	width: 60px;
 	height: 60px;
-	background: #767475;
+	background: #000;
 	margin-left: 30px;
+	border-left: 1px solid #0f0;
+	border-right: 1px solid #0f0;
 }
 
 .cassette__detail-line {
 	width: 2px;
 	height: 60px;
-	background: #542d2d;
+	background: #050;
 }
 
 .fake-btns-container {
 	width: 86px;
 	height: 190px;
-	background: #525556;
+	background: #000;
+	border: 1px solid #0f0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -57,43 +63,41 @@
 
 .green {
 	border-radius: 20%;
-	border: 3px transparent;
-	background: #4d9f5ce4;
+	border: 1px solid #050;
+	background: #050;
 	transition: 0.5s;
 }
 
 .red {
 	border-radius: 20%;
-	border: 3px transparent;
-	background: #c13c40;
+	border: 1px solid #500;
+	background: #500;
 	transition: 0.5s;
 }
 
 .darkgreen {
 	border-radius: 20%;
-	border: 3px transparent;
-	background: #4d7958;
+	border: 1px solid #030;
+	background: #030;
 	transition: 0.5s;
 }
 
 .fake-btn.green.set {
-	border: 3px solid #5ac16d5c;
-	box-shadow: 0px 0px 3px 2px rgba(0, 150, 0, 0.475),
-		0px 0px 1px 1px rgba(1, 192, 1, 0.345),
-		inset 0px 0px 1px 1px rgba(2, 178, 2, 0.345);
+	border: 1px solid #0f0;
+	background: #0f0;
+	box-shadow: 0 0 5px #0f0;
 }
 
 .fake-btn.red.set {
 	transition-delay: 0.6s;
-	border: 3px solid rgba(234, 95, 118, 0.326);
-	box-shadow: 0px 0px 3px 2px rgba(234, 91, 78, 0.475),
-		0px 0px 1px 1px rgba(236, 118, 107, 0.345),
-		inset 0px 0px 1px 1px rgba(230, 110, 99, 0.345);
+	border: 1px solid #f00;
+	background: #f00;
+	box-shadow: 0 0 5px #f00;
 }
 
 .fake-btn.darkgreen.set {
 	transition-delay: 1.2s;
-	border: 3px solid rgba(90, 193, 109, 0.254);
-	box-shadow: 0px 0px 3px 2px #59986995, 0px 0px 1px 1px #6ab07b7e,
-		inset 0px 0px 1px 1px #5a96685f;
+	border: 1px solid #0f0;
+	background: #0f0;
+	box-shadow: 0 0 5px #0f0;
 }

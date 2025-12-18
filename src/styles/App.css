@@ -1,4 +1,4 @@
-@import '../assets/fonts/Merriweather.css';
+@import '../assets/fonts/SourceCodePro.css';
 
 * {
 	margin: 0;
@@ -6,9 +6,17 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #0d0d0d;
+	color: #0f0;
+	font-family: 'SourceCodePro', monospace;
+}
+
 .App {
 	display: flex;
 	justify-content: center;
+	background-color: #0d0d0d;
+	min-height: 100vh;
 }
 
 .global-container {
@@ -20,12 +28,16 @@
 	flex-direction: column;
 	width: 260px;
 	margin-top: 190px;
+	border-left: 1px dashed #0f0;
+	border-right: 1px dashed #0f0;
 }
 
 .server-label {
-	font-family: 'Merriweather', sans-serif;
+	font-family: 'SourceCodePro', monospace;
 	margin-top: 20px;
 	margin-bottom: 10px;
+	color: #0f0;
+	text-shadow: 0 0 5px #0f0;
 }
 
 .server-container,
@@ -44,9 +56,10 @@
 
 .first-key,
 .second-key {
-	width: 40x;
+	width: 40px;
 	height: 40px;
-	color: rgba(0, 0, 0, 0.77);
+	color: #0f0;
+	filter: drop-shadow(0 0 2px #0f0);
 }
 
 .first-key {
@@ -65,6 +78,6 @@
 	width: 260px;
 	margin-top: 150px;
 	height: 130px;
-	border-bottom: dashed 3px rgba(0, 0, 0, 0.55);
-	border-top: dashed 3px rgba(0, 0, 0, 0.55);
+	border-bottom: dashed 3px #0f0;
+	border-top: dashed 3px #0f0;
 }
