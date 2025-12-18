@@ -23,6 +23,7 @@ and 2000 which will be randomly generated and used as public and private keys.
 
 - First of all you need to **generate public keys** for *Alice* and *Bob*. Press ```Generate``` button next to the ```Public key``` title and you will see that a random prime number has appeared in the center textarea.
 - Next you need to do the same thing but with **private keys**. Consider that DH KE algorithm implies that public keys are safe to be distributed through unsecured channel and private keys must be kept in secret by end users.
+- You can also add custom values to the public and private key fields instead of generating it randomly.
 - Now you are ready to calculate **partial keys**. They are also safe to exchange in unsecured channel because they are still not representing any secure information. Here you can see formulas with which it will be done automatically by pressing ```Calculate``` button next to the ```Partial key``` title (c - *Alice*, s - *Bob*):
 
 ```
